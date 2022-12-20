@@ -1,0 +1,78 @@
+@import '../common/styles/sass/variables';
+@import '../common/styles/sass/mixins';
+
+.mainBlock {
+  min-height: 100vh;
+  background-color: $backGroundColor1;
+
+  position: relative; //background photo
+  z-index: 0;
+
+  @include flex(row, center, center, nowrap);
+  padding: 100px 0;
+
+  .bgImage {
+    background-image: url('../Assets/Images/bg2.jpg');
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.5;
+  }
+
+  .container {
+    @include container();
+    @include flex(row, space-around, center, wrap);
+
+    .mainText {
+      @include flex(column, flex-start, flex-start, nowrap);
+      color: $textColor;
+
+      span {
+        @include text($fontFamilyJosefin, 28px, 1.6, 700);
+
+        &:nth-child(2) {
+          @include text($fontFamilyJosefin, 60px, 1.6, 700);
+          letter-spacing: 3px;
+
+          span {
+            @include text($fontFamilyJosefin, 60px, 1.2, 700);
+            letter-spacing: 5px;
+            position: relative;
+            margin: 10px 0;
+            z-index: 0;
+
+            &:before {
+              content: "";
+              position: absolute;
+              width: 100%;
+              height: 16px;
+              background-color: $primaryColor;
+              bottom: 0;
+              z-index: -1;
+            }
+          }
+        }
+
+        &:nth-child(3) {
+          @include text($fontFamilyJosefin, 30px, 1.6, 600);
+          letter-spacing: 2px;
+          margin: 10px 0;
+        }
+      }
+
+      h1 {
+        @include text($fontFamilyJosefin, 30px, 2.8, 600);
+        margin: 0;
+      }
+
+      @media screen and (max-width: 1143px) {
+        align-items: center;
+      }
+    }
+  }
+}
+
+

@@ -1,0 +1,18 @@
+@import '../common/styles/sass/variables.scss';
+@import '../common/styles/sass/mixins.scss';
+
+
+a {
+  color: #ffffff;
+}
+
+.header {
+  height: 70px;
+  padding: 0 20px;
+  @include flex(row, flex-end, center, nowrap);
+  opacity: 1;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  right: 0;
+}

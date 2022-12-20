@@ -1,0 +1,14 @@
+@import './common/styles/sass/variables.scss';
+
+html, body {
+  overscroll-behavior: contain;
+  background-color: $backGroundColor1;
+}
+
+*, html {
+  scroll-behavior: smooth;
+}
+
+.App {
+  text-align: center;
+}

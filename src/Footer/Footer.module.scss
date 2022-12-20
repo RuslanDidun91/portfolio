@@ -1,0 +1,58 @@
+@import '../common/styles/sass/variables';
+@import '../common/styles/sass/mixins';
+
+.footer {
+  background-color: $backGroundColor1;
+  cursor: inherit;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  width: 100%;
+
+  @media screen and (max-width: 389px) {
+    .footer {
+      width: 100%;
+      justify-content: space-around;
+    }
+  }
+
+  .footerContainer {
+    @include container();
+    flex-direction: column;
+  }
+
+  .icons {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    margin: 45px 0 25px 0;
+    color: white;
+    transition: 0.5s all;
+  }
+
+  .icons a {
+    text-decoration: none;
+    color: white;
+    position: relative;
+    z-index: 3;
+  }
+
+  .icons :hover {
+    opacity: 0.5;
+    transition: all 0.3s;
+  }
+}
+
+.rightsReserved {
+  color: #DEDCDCFF;
+  letter-spacing: 1px;
+  transition: 0.5s all;
+  position: relative;
+  z-index: 3;
+  cursor: default;
+}
+
+.rightsReserved:hover {
+  letter-spacing: 0.3em;
+}
+

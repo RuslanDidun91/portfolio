@@ -1,0 +1,71 @@
+@import '../common/styles/sass/variables';
+@import '../common/styles/sass/mixins';
+
+.mainAboutMe {
+  background-color: $backGroundColor1;
+  min-height: 80vh;
+  color: white;
+  padding: 20px 0;
+
+  .aboutMe {
+    display: grid;
+    padding: 100px 0;
+    grid-template-columns: auto 0fr auto;
+    @media screen and (max-width: 800px) {
+      grid-template-columns: auto;
+      margin: 0 50px;
+      text-align: center;
+    }
+    @media screen and (max-width: 520px) {
+      grid-template-columns: 360px;
+      margin: 0 50px;
+      text-align: center;
+    }
+    @media screen and (max-width: 420px) {
+      grid-template-columns: 300px;
+    }
+  }
+
+  .photo {
+    position: relative;
+    z-index: 1;
+    margin: 40px 50px;
+
+    .image {
+      height: 400px;
+      width: 300px;
+      @include bgSettings();
+      background-image: url("../Assets/Images/myPhoto.jpg");
+      background-position: 80% 0;
+      @media screen and (max-width: 600px) {
+        height: 360px;
+        width: 260px;
+        transition: .5s;
+      }
+
+      &:before {
+        content: '';
+        position: absolute;
+        height: 440px;
+        width: 300px;
+        border: 4px solid $primaryColor;
+        left: 25px;
+        top: -25px;
+        z-index: -1;
+      }
+    }
+  }
+}
+
+.textSpan {
+  @include text($fontFamilyJosefin, 16px, 1.3, 400);
+  display: block;
+  text-align: center;
+  margin: 0 50px;
+}
+
+.quoteDiv {
+  padding: 40px 0 0 0;
+  //left: 0;
+  @include text($fontFamilyJosefin, 14px, 1, 500);
+}
