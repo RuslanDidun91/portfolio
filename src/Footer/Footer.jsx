@@ -31,7 +31,7 @@ export const Footer = () => {
                                                              size='2x' color={'white'}/></a>
         },
         {
-            socialIcon: <a href='https://github.com/RuslanDidun'
+            socialIcon: <a href='https://github.com/RuslanDidun91'
                            target='_blank'
                            rel="noreferrer"><FontAwesomeIcon icon={['fab', 'github']}
                                                              size='2x' color={'white'}/></a>

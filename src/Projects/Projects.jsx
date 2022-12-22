@@ -9,33 +9,40 @@ export const MyProjects = () => {
     //projects state
     const projects = [
         {
-            title: 'Mongoose Lakes Blog',
-            hrefToProps: 'https://github.com/RuslanDidun/mongoose-lakes-blog',
+            title: 'MERN Ecommerce',
+            hrefToProps: 'https://mern-ecommerse-project.herokuapp.com/orders/new',
+            image: "https://i.imgur.com/2ptIgNp.png",
+            description: 'Full Stack web application, Used MongoDB, Express_js, React, ' +
+                'Node_js, Material_Ui, AntDesign. Consumed 3rd party API and JWT ' +
+                'based auth.'
+        },
+        {
+            title: 'Canadian Lakes Blog',
+            hrefToProps: 'https://mongoose-lakes-blog.herokuapp.com/lakes/login',
             image: "https://i.imgur.com/51DGJsE.png",
             description: 'Full Stack web application, where I used Express_js, ' +
                 'Mongoose, JavaScript, OAuth, GitHub, heroku HTML and Css.'
         },
         {
             title: 'Spider-Keeper',
-            hrefToProps: 'https://github.com/RuslanDidun/django_spiderkeeper',
+            hrefToProps: 'https://spider-keeper.herokuapp.com/about/',
             image: "https://i.imgur.com/zi9uFsf.png",
             description: 'Full CRUD web application written on Python and Django. ' +
                 'Allows users to create own spider, feed them and put decorations.'
         },
         {
+            title: 'Yard Barker',
+            hrefToProps: 'https://yardbarker.herokuapp.com',
+            image: "https://i.imgur.com/5s17U1A.png",
+            description: 'Full Stack Web application written with Python and Django. ' +
+                'CRUD operations, API, GitHub team workflow and lots of collaborations.'
+        },
+        {
             title: 'MineSweeper',
-            hrefToProps: 'https://github.com/RuslanDidun/mineSweeper_JS',
+            hrefToProps: 'https://github.com/RuslanDidun91/mineSweeper_js',
             image: "https://i.imgur.com/xDfWDFl.png",
             description: 'Funny game, written with Vanilla JavaScript and MVC architecture. ' +
                 'Implemented HTML, CSS, sound effects, recursion, DOM manipulation. '
-        },
-        {
-            title: 'Yard Barker',
-            hrefToProps: 'https://github.com/RuslanDidun/yardbarker',
-            image: "https://i.imgur.com/5s17U1A.png",
-            description: 'Do not waste time anymore, join the Yard Barker community. ' +
-                'Full Stack Web application written with Python and Django. ' +
-                'CRUD operations, API, GitHub team workflow and lots of collaborations.'
         },
         {
             title: 'Organizer',
