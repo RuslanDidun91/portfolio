@@ -39,25 +39,18 @@ export const MyProjects = () => {
         },
         {
             title: 'MineSweeper',
-            hrefToProps: 'https://github.com/RuslanDidun91/mineSweeper_js',
+            hrefToProps: 'https://ruslandidun91.github.io/mineSweeper_js/',
             image: "https://i.imgur.com/xDfWDFl.png",
             description: 'Funny game, written with Vanilla JavaScript and MVC architecture. ' +
                 'Implemented HTML, CSS, sound effects, recursion, DOM manipulation. '
         },
         {
             title: 'Organizer',
-            hrefToProps: 'https://github.com/RuslanDidun/new-todoListProjec',
+            hrefToProps: 'https://ruslandidun91.github.io/react-todoList-ts/',
             image: "https://i.imgur.com/DDsBmfS.jpg",
             description: 'Front End web application, which helps you to make own todo list. ' +
                 'Used TypeScript, React, Redux, Yarn, Material_ui, Formik, Ant Design.'
         },
-        {
-            title: 'Social Network',
-            hrefToProps: 'https://github.com/RuslanDidun/mySocialNetworkProject',
-            image: "https://i.imgur.com/REj0cdz.jpg",
-            description: 'Front End Web application, functional social network. ' +
-                'Used React + Redux. Hooks, Reducers, Thunks, Socket io, Ant Design.'
-        }
     ]
 
     return (
@@ -75,8 +68,7 @@ export const MyProjects = () => {
                                      title={p.title}
                                      hrefToProps={p.hrefToProps}
                                      description={p.description}
-                                     image={p.image}
-                            />
+                                     image={p.image}/>
                         </Fade>
                     ))}
                 </div>
