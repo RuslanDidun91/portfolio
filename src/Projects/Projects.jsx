@@ -9,6 +9,13 @@ export const MyProjects = () => {
     //projects state
     const projects = [
         {
+            title: 'My-YouTube',
+            hrefToProps: 'https://ruslandidun91.github.io/my-youtube/',
+            image: "https://i.imgur.com/pgKBvwQ.png",
+            description: 'Front End web application, used React and Material UI. ' +
+                'Consumed YouTube API through RapidAPI,  '
+        },
+        {
             title: 'MERN Ecommerce',
             hrefToProps: 'https://mern-ecommerse-project.herokuapp.com/orders/new',
             image: "https://i.imgur.com/2ptIgNp.png",
