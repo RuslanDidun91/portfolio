@@ -4,12 +4,18 @@ import {Title} from '../common/components/title/Title'
 import {Fade} from "react-awesome-reveal"
 import {Project} from './Project/Project'
 
-
 export const MyProjects = () => {
     //projects state
     const projects = [
         {
-            title: 'My-YouTube',
+            title: 'mySpotify 2.0',
+            hrefToProps: 'https://ruslan-didun-myspotify-2.netlify.app',
+            image: "https://i.imgur.com/r153XjC.png",
+            description: 'Front End web application, used React + Redux flow. ' +
+                'Consumed Shazam and geo.Apify API through Rapid API, Tailwind CSS  '
+        },
+        {
+            title: 'myTube 2.0',
             hrefToProps: 'https://ruslandidun91.github.io/my-youtube/',
             image: "https://i.imgur.com/pgKBvwQ.png",
             description: 'Front End web application, used React and Material UI. ' +
