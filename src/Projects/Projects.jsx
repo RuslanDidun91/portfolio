@@ -8,6 +8,20 @@ export const MyProjects = () => {
     //projects state
     const projects = [
         {
+            title: 'Mentor/Mentee Platform',
+            hrefToProps: 'https://effront.azurewebsites.net/',
+            image: "https://i.imgur.com/TK2U8H7.png",
+            description: 'Full Stack webb platform gives ability to connect mentors and mentees.' +
+                'App is mobile responsive, created with NextJs, Mongo and tailwind'
+        },
+        {
+            title: 'Property Dashboard',
+            hrefToProps: 'https://mern-dashboard-yariga.netlify.app/',
+            image: "https://i.imgur.com/uvCQBrs.png",
+            description: 'Full Stack application, created with Mongo, Express, React, Node. ' +
+                'Used refine to create project and Material UI for responsive web design.'
+        },
+        {
             title: 'mySpotify 2.0',
             hrefToProps: 'https://ruslan-didun-myspotify-2.netlify.app',
             image: "https://i.imgur.com/r153XjC.png",

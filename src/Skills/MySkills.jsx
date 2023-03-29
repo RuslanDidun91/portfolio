@@ -3,7 +3,17 @@ import styleContainer from '../common/styles/container.module.css'
 import {Title} from "../common/components/title/Title"
 import {Skill} from "./Skill/Skill"
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import {faCss3, faGithub, faHtml5, faJs, faMdb, faNode, faPython, faReact} from "@fortawesome/free-brands-svg-icons"
+import {
+    faCss3,
+    faGithub,
+    faHtml5,
+    faJs,
+    faMdb,
+    faNode,
+    faPython,
+    faReact,
+    faChrome
+} from "@fortawesome/free-brands-svg-icons"
 import {Fade} from "react-awesome-reveal"
 
 
@@ -62,6 +72,12 @@ export const MySkills = () => {
             description: 'Used Node_js for both front-end and back-end development. ' +
                 'Created full stack, dynamic web app using Express_js and EJS template.',
             icon: <FontAwesomeIcon icon={faNode} size={"4x"}/>
+        },
+        {
+            title: 'Cypress | Unit test',
+            description: 'e2e automation testing with Cypress, Unit tests, TDD. ' +
+                'API testing through postman, regression testing, Chrome dev tools for debugging.',
+            icon: <FontAwesomeIcon icon={faChrome} size={"4x"}/>
         }
     ]
 
