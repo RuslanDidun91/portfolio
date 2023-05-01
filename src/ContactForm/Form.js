@@ -1,5 +1,5 @@
-import {useForm, ValidationError} from '@formspree/react'
-import style from './Contacts.module.scss'
+import {useForm, ValidationError} from '@formspree/react';
+import style from './Contacts.module.scss';
 
 export function Form() {
     const [state, handleSubmit] = useForm("mjvljvrz")
@@ -16,5 +16,5 @@ export function Form() {
             <ValidationError prefix="Message" field="message" errors={state.errors}/>
             <button type="submit" disabled={state.submitting}>Send Message</button>
         </form>
-    )
-}
+    );
+};

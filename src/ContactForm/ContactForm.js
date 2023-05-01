@@ -1,7 +1,8 @@
-import style from './Contacts.module.scss'
-import {Title} from '../common/components/title/Title'
-import {Fade} from "react-awesome-reveal"
-import {Form} from './Form'
+import {Title} from '../common/components/title/Title';
+import {Fade} from "react-awesome-reveal";
+import {Form} from './Form';
+import style from './Contacts.module.scss';
+
 
 export const ContactForm = () => {
     return (
@@ -15,5 +16,5 @@ export const ContactForm = () => {
                 </Fade>
             </div>
         </div>
-    )
-}
+    );
+};

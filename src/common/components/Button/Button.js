@@ -1,4 +1,4 @@
-import style from './Button.module.scss'
+import style from './Button.module.scss';
 
 export const Button = (props) => {
     return (

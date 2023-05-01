@@ -1,9 +1,9 @@
-import {Title} from '../common/components/title/Title'
-import {Fade} from "react-awesome-reveal"
-import {Project} from './Project/Project'
+import { Title } from '../common/components/title/Title';
+import { Fade } from "react-awesome-reveal";
+import { Project } from './Project/Project';
 
-import styleContainer from '../common/styles/container.module.css'
-import style from './Projects.module.scss'
+import styleContainer from '../common/styles/container.module.css';
+import style from './Projects.module.scss';
 
 export const MyProjects = () => {
     //projects state
@@ -86,30 +86,30 @@ export const MyProjects = () => {
             description: 'Front End web application, which helps you to make own todo list. ' +
                 'Used TypeScript, React, Redux, Yarn, Material_ui, Formik, Ant Design.'
         },
-    ]
+    ];
 
     return (
         <div id='projects' className={style.mainProjectBlock}>
             <div className={`${styleContainer.container} ${style.blockContainer}`}>
                 <div>
                     <Fade direction={"up"} delay={0}>
-                        <Title text={'Projects'}/>
+                        <Title text={'Projects'} />
                     </Fade>
                 </div>
                 <div className={style.myProjects}>
                     {projects.map((p, idx) => (
                         <Fade direction={"up"} delay={0}>
                             <Project key={idx.id}
-                                     title={p.title}
-                                     hrefToProps={p.hrefToProps}
-                                     description={p.description}
-                                     image={p.image}/>
+                                title={p.title}
+                                hrefToProps={p.hrefToProps}
+                                description={p.description}
+                                image={p.image} />
                         </Fade>
                     ))}
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
 

@@ -1,6 +1,6 @@
-import style from './Skill.module.scss'
+import style from './Skill.module.scss';
 
-export const Skill = ({title, description, icon}) => {
+export const Skill = ({ title, description, icon }) => {
     return (
         <div className={style.skill}>
             <div className={style.icon}>
@@ -11,5 +11,5 @@ export const Skill = ({title, description, icon}) => {
                 <span className={style.projectDescription}>{description}</span>
             </div>
         </div>
-    )
-}
+    );
+};

@@ -1,6 +1,6 @@
-import {useState} from 'react'
-import {FaArrowCircleUp} from 'react-icons/fa'
-import {Button} from './Styles'
+import {FaArrowCircleUp} from 'react-icons/fa';
+import {useState} from 'react';
+import {Button} from './Styles';
 
 export const ScrollButton = () => {
 

@@ -1,6 +1,6 @@
-import styles from './AboutMe.module.scss'
 import {Title} from "../common/components/title/Title";
 import {Fade} from "react-awesome-reveal";
+import styles from './AboutMe.module.scss';
 import Tilt from 'react-parallax-tilt';
 
 
@@ -60,5 +60,5 @@ export const AboutMe = () => {
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
