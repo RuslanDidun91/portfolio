@@ -1,18 +1,26 @@
-import style from './Projects.module.scss'
-import styleContainer from '../common/styles/container.module.css'
 import {Title} from '../common/components/title/Title'
 import {Fade} from "react-awesome-reveal"
 import {Project} from './Project/Project'
+
+import styleContainer from '../common/styles/container.module.css'
+import style from './Projects.module.scss'
 
 export const MyProjects = () => {
     //projects state
     const projects = [
         {
+            title: 'Air bee&bee',
+            hrefToProps: 'https://rent-home-two.vercel.app/',
+            image: "https://i.imgur.com/fy2L18J.png",
+            description: 'Full Stack webb app where you can find property on any taste.' +
+                'Mobile responsive, app created with NextJS, Mongo, Prisma and TailwindCSS.'
+        },
+        {
             title: 'Mentor/Mentee Platform',
             hrefToProps: 'https://effront.azurewebsites.net/',
             image: "https://i.imgur.com/TK2U8H7.png",
             description: 'Full Stack webb platform gives ability to connect mentors and mentees.' +
-                'App is mobile responsive, created with NextJs, Mongo and tailwind'
+                'App is mobile responsive, created with NextJs, Mongo and tailwind.'
         },
         {
             title: 'Property Dashboard',
